@@ -20,10 +20,16 @@ public class Account {
         this.isim = isim;
         this.email = email;
         this.telefonNo = telefonNo;
-        System.out.println("Bşarılı....");
+        System.out.println("Başarılı....");
     }
 
-
+    public void success(){
+        if(hesapNo.equals("null")){
+            System.out.println(0);
+        }else{
+            System.out.println(1);
+        }
+    }
 
     public void paraYatir(double miktar) {
         bakiye += miktar;
